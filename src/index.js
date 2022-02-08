@@ -7,6 +7,9 @@ import htmlToNotionBlocks from './parser';
 
 async function index() {
   const feedItems = await getNewFeedItems();
+  
+  console.log("items length: ");
+  console.log(feedItems.length);
 
   for (let i = 0; i < feedItems.length; i++) {
     const item = feedItems[i];
